@@ -8,6 +8,10 @@ class Demo:
     def set_value(self, value):
         self.__value = value
 
+    def __private_method(self):
+        self.__value += 1
+        print("This is a private method")
+
 
 if __name__ == "__main__":
     obj = Demo(42)
@@ -20,6 +24,8 @@ if __name__ == "__main__":
     obj._Demo__value = 44
     print(obj.get_value())
     print(obj.__dict__)
+
+    # obj.__private_method()
     '''
     Python have a convention to use a single underscore prefix for a variable to indicate that it is private.
     However, this is just a convention and does not actually make the variable private.
