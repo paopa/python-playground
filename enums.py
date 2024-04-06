@@ -7,7 +7,8 @@ class Animal(Enum):
     BIRD = {"name": "bird", "value": 3}
 
     def demo(self) -> None:
-        print(self.value)
+        print(self.value["name"])
+        print(self.value["value"])
 
 
 if __name__ == "__main__":
