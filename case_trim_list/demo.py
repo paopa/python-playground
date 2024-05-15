@@ -12,7 +12,7 @@ try:
     x = "Hello"
 
     del x
-    print(x)  # Output: NameError: name 'x' is not defined
+    print(x)  # Output: NameError: name 'x' is not defined   # noqa: F821
 except Exception as e:
     print(e)
 
