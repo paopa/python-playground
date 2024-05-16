@@ -1,8 +1,11 @@
 # List to hold all decorated classes
-registered_classes = []
+registered_classes = {}
 
 
-def register_class(cls):
-    # Add the class to the list of registered classes
-    registered_classes.append(cls)
-    return cls
+def register_class(name: str, alias: str = None):
+    def wrapper(cls):
+        print(alias)
+        registered_classes[name] = cls
+        return cls
+
+    return wrapper
