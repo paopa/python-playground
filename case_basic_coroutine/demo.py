@@ -1,8 +1,13 @@
 import asyncio
 
 
+def dummy():
+    print("this is a dummy function")
+
+
 # Define the first coroutine
 async def say_hello():
+    dummy()
     print("Hello,")
     await asyncio.sleep(3)  # Simulate an I/O-bound task
     print("world!")
@@ -10,6 +15,7 @@ async def say_hello():
 
 # Define the second coroutine
 async def count_to_five():
+    dummy()
     for i in range(1, 6):
         print(i)
         await asyncio.sleep(1)  # Simulate an I/O-bound task
