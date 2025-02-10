@@ -6,7 +6,7 @@ authors = ["Pao-Sheng Wang <paooap.oappao@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "~3.12"
 numpy = "^1.26.4"
 scipy = "^1.13.0"
 matplotlib = "^3.8.4"
@@ -20,6 +20,7 @@ aiohttp = "^3.9.5"
 cachetools = "^5.5.0"
 grpcio = "^1.66.1"
 grpcio-tools = "^1.66.1"
+torch = "^2.6.0"
 
 
 [build-system]
