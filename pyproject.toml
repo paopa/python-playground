@@ -23,6 +23,8 @@ grpcio-tools = "^1.66.1"
 torch = "^2.6.0"
 opencv-python = "^4.11.0.86"
 scikit-image = "^0.25.2"
+e2b-code-interpreter = "^1.1.1"
+dotenv = "^0.9.9"
 
 
 [build-system]
